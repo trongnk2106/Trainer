@@ -48,7 +48,7 @@ supported_types = [".png", ".jpg", ".jpeg", ".PNG", ".JPG", ".JPEG", ".webp", ".
 
 batch_size = 8
 max_data_loader_n_workers = 2
-model = "runwayml/stable-diffusion-v1-5"
+model = "SmilingWolf/wd-v1-4-swinv2-tagger-v2"
 threshold = 0.85
 
 
