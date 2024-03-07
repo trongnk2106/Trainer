@@ -1,0 +1,11 @@
+first : if you didnt have pretrain, please check download_fromhub.py
+
+second : install requirements.txt
+
+third : !pip3 install --upgrade protobuf==3.20.0 if you have bug about subprocess
+
+run train :
+
+!python3 trainner.py --user='' --task='' --sdxl='' --is_male=1'' --data_dir=''
+
+you must change path to model in config.py and more params in trainner.py
