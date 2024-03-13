@@ -297,23 +297,32 @@ def trainner_lora(feedback_status : str, data_dir : str, user : str, task : str,
     else :
         return "Good"
 
-# if __name__ ==  '__main__':
+if __name__ ==  '__main__':
     
-#     parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser()
     # implement the react_feedback if react_feedback is True => run train else not
 
-    # parser.add_argument("--data_dir", required=True, default='', type=str)
-    # parser.add_argument("--user", required=True, default='', type=str)
-    # parser.add_argument("--task", required=True, default='', type=str)
-    # parser.add_argument("--sdxl", required=True, default='0', type=str)
-    # parser.add_argument("--is_male", required=True, default=True, type=bool)
-    # # parser.add_argument("--store_weight", action='store_true')
+    parser.add_argument("--data_dir", required=True, default='', type=str)
+    parser.add_argument("--user", required=True, default='', type=str)
+    parser.add_argument("--task", required=True, default='', type=str)
+    parser.add_argument("--sdxl", required=True, default='0', type=str)
+    parser.add_argument("--is_male", required=True, default="1", type=str)
+    # parser.add_argument("--store_weight", action='store_true')
     
-    # args = parser.parse_args()
+    args = parser.parse_args()
     
-    # feedback_react = False
+    feedback_react = True
     
     # if feedback_react:
-    #     main(args)
+    #     data_dir = args.data_dir
+    #     user = args.user
+    #     task = args.task
+    #     sdxl = args.sdxl
+    #     is_male = args.is_male
+    #     run(data_dir, user, task, sdxl, is_male)
+
+
+    # test trainer
+    trainner_lora("bad", args.data_dir, args.user, args.task, args.sdxl, args.is_male)
     
     

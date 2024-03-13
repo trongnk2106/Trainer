@@ -8,13 +8,13 @@ caption_dropout_every_n_epochs = 0
 flip_aug = false
 color_aug = false
 [[datasets.subsets]]
-image_dir = "/workspace/mainapp/src/.././datasets/training/bachnx/06/processed"
+image_dir = "/workspace/Trainer/data"
 class_tokens = "mksks style"
 num_repeats = 48
 
 [[datasets.subsets]]
 is_reg = true
-image_dir = "/workspace/mainapp/src/train_image_data"
+image_dir = "/workspace/Trainer/data"
 class_tokens = "style"
 num_repeats = 1
 

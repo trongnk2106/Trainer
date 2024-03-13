@@ -61,9 +61,9 @@ v_parameterization = False
 project_name = "bnx"
 v2 = False
 
-pretrained_model_name_or_path = os.path.join(pretrained_model, "path to pretrained model sd 1.5")
+pretrained_model_name_or_path = os.path.join(pretrained_model, "snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9")
 pretrained_modelxl_name_or_path = os.path.join(pretrained_model, "path to pretrain model sdxl")
-vae = os.path.join(root_dir, "path to vae of model sd 1.5")
+vae = os.path.join(root_dir, "pretrained_model/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9/vae")
 vae_xl = os.path.join(root_dir, "path to vae of model sdxl")
 
 output_dir = os.path.join(root_dir, "lora_output") #f"{root_dir}/SD-Data/Lora/"
