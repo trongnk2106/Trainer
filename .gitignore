@@ -1,3 +1,9 @@
 pretrained_model/
 lora_output/
 venv/
+.locks/
+
+LoRa/logs/*
+deps/
+data/
+vae/

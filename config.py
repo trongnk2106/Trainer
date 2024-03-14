@@ -6,7 +6,6 @@ print(root_dir)
 def create_dir(dir_path):
     if not os.path.exists(dir_path):
         os.mkdir(dir_path)
-    # return dir_path
 
 lora_dir = os.path.join(root_dir, 'LoRA')
 
@@ -61,10 +60,10 @@ v_parameterization = False
 project_name = "bnx"
 v2 = False
 
-pretrained_model_name_or_path = os.path.join(pretrained_model, "snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9")
-pretrained_modelxl_name_or_path = os.path.join(pretrained_model, "path to pretrain model sdxl")
-vae = os.path.join(root_dir, "pretrained_model/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9/vae")
-vae_xl = os.path.join(root_dir, "path to vae of model sdxl")
+pretrained_model_name_or_path = os.path.join(pretrained_model, "models--runwayml--stable-diffusion-v1-5/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9")
+pretrained_modelxl_name_or_path = os.path.join(pretrained_model, "models--stabilityai--stable-diffusion-xl-base-1.0/snapshots/462165984030d82259a11f4367a4eed129e94a7b")
+vae = os.path.join(root_dir, "pretrained_model/models--runwayml--stable-diffusion-v1-5/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9/vae")
+vae_xl = os.path.join(root_dir, "pretrained_model/models--stabilityai--stable-diffusion-xl-base-1.0/snapshots/462165984030d82259a11f4367a4eed129e94a7b/vae_1_0")
 
 output_dir = os.path.join(root_dir, "lora_output") #f"{root_dir}/SD-Data/Lora/"
 output_to_drive = False

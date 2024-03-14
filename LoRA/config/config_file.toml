@@ -1,8 +1,7 @@
 [model_arguments]
 v2 = false
 v_parameterization = false
-pretrained_model_name_or_path = "/workspace/Trainer/pretrained_model/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9"
-vae = "/workspace/Trainer/pretrained_model/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9/vae"
+vae = "/workspace/Trainer/pretrained_model/models--runwayml--stable-diffusion-v1-5/snapshots/1d0c4ebf6ff58a5caecab40fa1406526bca4b5b9/vae"
 
 [additional_network_arguments]
 no_metadata = false
@@ -44,7 +43,7 @@ clip_skip = 1
 logging_dir = "/workspace/Trainer/LoRA/logs"
 log_prefix = "Trong1"
 lowram = true
-no_half_vae = false
+no_half_vae = true
 
 [sample_prompt_arguments]
 sample_every_n_epochs = 2
